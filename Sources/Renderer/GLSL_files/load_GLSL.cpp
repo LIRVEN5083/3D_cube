@@ -1,6 +1,6 @@
 #include "load_GLSL.hpp"
 
-MyFile::file_read::file_read(std::string& file_path){
+MyFile::file_read::file_read(std::string file_path){
 	std::stringstream buffer;
 	std::ifstream file(file_path);
 
