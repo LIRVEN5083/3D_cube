@@ -1,6 +1,13 @@
-Write in the terminal:
-  cmake -B build
-  cmake --build build
-Project path:
-  build/...
+__Write in the terminal:__
+
+
+  >cmake -B build
+
+  >cmake --build build
+
+  
+__Project path:__
+
+
+  3D_cube/build/...
 
