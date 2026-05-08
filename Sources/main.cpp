@@ -18,8 +18,6 @@ double valueY = 0;
 double speed = 0.0;
 double lastFrameTime = 0.0;
 
-double line_size = -0.5;
-
 int times = 0;
 
 GLfloat cube_vertices[] = {
