@@ -27,7 +27,7 @@ void IncreaseSpeed(double& speed) {
 }
 
 void DecreaseSpeed(double& speed) {
-    if(speed > 0.2 && line_size > -0.5){
+    if(speed > 0.2){
         speed -= 0.1;
     }
     if (times == 2) {
