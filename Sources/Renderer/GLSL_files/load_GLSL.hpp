@@ -10,7 +10,7 @@
 namespace MyFile {
 	class file_read {
 	public:
-		file_read(std::string& file_path);
+		file_read(std::string file_path);
 
 		const char* getSource() const;
 	private:
