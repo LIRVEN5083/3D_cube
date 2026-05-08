@@ -46,7 +46,7 @@ void WindowSize(GLFWwindow* window, int width, int height){
 void RegSpeed(GLFWwindow* window, int key, int scancode, int action, int mode) {
     
     if (action == GLFW_PRESS || action == GLFW_REPEAT) {
-        if (key == GLFW_KEY_Q) { IncreaseSpeed(speed, line_size); }
-        if (key == GLFW_KEY_E) { DecreaseSpeed(speed, line_size); }
+        if (key == GLFW_KEY_Q) { IncreaseSpeed(speed); }
+        if (key == GLFW_KEY_E) { DecreaseSpeed(speed); }
     }
 }
