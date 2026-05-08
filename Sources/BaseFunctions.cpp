@@ -17,9 +17,8 @@ double getTime() {
     return time.count();
 }
 
-void IncreaseSpeed(double& speed, double& line_size) {
+void IncreaseSpeed(double& speed) {
     speed += 0.1;
-    line_size += 0.01;
     if (times == 2) {
         std::cout << "current speed: " << speed << "\n";
         times = 0;
@@ -27,10 +26,9 @@ void IncreaseSpeed(double& speed, double& line_size) {
     times++;
 }
 
-void DecreaseSpeed(double& speed, double& line_size) {
+void DecreaseSpeed(double& speed) {
     if(speed > 0.2 && line_size > -0.5){
         speed -= 0.1;
-        line_size -= 0.01;
     }
     if (times == 2) {
         std::cout << "current speed: " << speed << "\n";
