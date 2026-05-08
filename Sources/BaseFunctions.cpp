@@ -39,25 +39,6 @@ void DecreaseSpeed(double& speed, double& line_size) {
     times++;
 }
 
-void Move(double valueX, double valueY) {
-    glTranslated(valueX, valueY, 0.0);
-}
-
-void SetupModelViewMatrix(double time, int speed) {
-    glMatrixMode(GL_MODELVIEW); // команда устаревшего (Fixed Function Pipeline) OpenGL, которая переключает текущий режим работы с матрицами на «видовую матрицу модели
-    glLoadIdentity(); //Единичная матрциа - текущая матрица
-
-    glScaled(1.0, 1.0, 1.0);
-    glRotated(time * speed, 0.0, 0.0, 1); // Матрица поворота
-
-    //glTranslated(0.0, 0.0, 0.0); //Матрица переноса
-
-    /* 
-        T1, T2, T3
-        T3 * T2 * T1 
-    */
-}
-
 void WindowSize(GLFWwindow* window, int width, int height){
     windowSizeX = width;
     windowSizeY = height;
