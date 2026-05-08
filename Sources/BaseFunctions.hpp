@@ -23,9 +23,9 @@ extern int times2;
 
 void mouse_cursor_callback(GLFWwindow* window, double xpos, double ypos);
 
-void IncreaseSpeed(double& speed, double& line_size);
+void IncreaseSpeed(double& speed);
 
-void DecreaseSpeed(double& speed, double& line_size);
+void DecreaseSpeed(double& speed);
 
 double getTime();
 
